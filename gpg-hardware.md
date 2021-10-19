@@ -38,7 +38,18 @@ gpg: Good signature from "Vitalii Kozlovskyi <ubombi@gmail.com>" [ultimate]
 gpg:                 aka "Vitalii Kozlovskyi <vitalii@kozlovskyi.dev>" [ultimate]
 ```
 And git is not one to blame. All is does, is passes `user.signingkey` value as `gpg --local-user`. 
-But how to force gpg to use specific subkey? (it only happens with subkeys)
+But [how to force gpg to use specific subkey](https://www.gnupg.org/documentation/manuals/gnupg/Specify-a-User-ID.html)? _(it only happens with subkeys)_
+>When using gpg an exclamation mark (!) may be appended to force using the specified primary or secondary key and not to try and calculate which primary or secondary key to use.
 
-
-
+```bash
+# Force gpg to use subkey S1
+git config --global user.signingkey SOMES1ID!
+# check if works
+git commit --amend -m "test signing" -S
+git log --show-signature -n1
+```
+BINGO
+Looks signed, but wait. Why it used the wrong key?
+```
+gpg:                using EDDSA key S1
+```
