@@ -26,8 +26,8 @@ Introduce realistic tech summary.
 
 I would prefer to hear: 
 1. In general, CRUD, Queues, one place is high-loaded. Building new functionality on top. No specific requirements about consistency. 
-2. App idea:  { _save time_ | _increase efficiency_ | _get insights_ } in { _whatever field_ }.
-3. I'm { Role }, work on { tech | app }, interested in { tech... | petproject }.  
+2. App idea:  { _save time_ \| _increase efficiency_ \| _get insights_ } in { _whatever field_ }.
+3. I'm { Role }, work on { tech \| app }, interested in { tech... \| petproject }.  
 
 #### Pt2. [knowledge & experience]
 **TL:DR:** Keep it informal, like ~~water-cooler~~ coffee-machine talk.
