@@ -1,1 +1,3 @@
 remote_theme: riggraz/no-style-please
+plugins:
+  - jekyll-sitemap
