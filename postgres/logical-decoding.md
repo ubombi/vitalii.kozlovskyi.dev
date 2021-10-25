@@ -1,4 +1,4 @@
-## Logical decoding 
+## Logical decoding (Draft)
 
 Introduced in Postgres since version 9.4, allows abuse of internal consistency mechanism, for some advanced functionality.
 Built on top of existing features. Which we need to understand first.
