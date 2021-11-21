@@ -1,6 +1,11 @@
-## How to make tech interviews comfortable for Candidate and efficient for you.  TBD;
-I'm not talking about FAANG-like whole day endurance test but time-limited (1-2h) talk.
+---
+title: "How to make tech interviews comfortable for Candidate and efficient for you"
+date: 2021-11-21T23:09:49+01:00
+ShowToc: true
+TocOpen: true
+---
 
+I'm not talking about FAANG-like whole day endurance test but time-limited (1-2h) talk.
 **Disclaimer**: This is an exclusively personal opinion.
 
 
@@ -52,17 +57,19 @@ or more generic ones
   - **Hav you figured out why?**  <-- this one is about leaky abstractions and candidate curiosity
   - What was the workaround?
 
-**It's okay to not understand the Candidate. ** There is a high chance that half of the information is beyond your knowledge. 
+**It's okay to not understand the Candidate**. There is a high chance that half of the information is beyond your knowledge. Be brave and 
 Ask for details and learn new stuff. Make notes. 
 
 
 **Keep track of time, and change subjects, to gather comprehensive insights.** 
 
-#### Pt3. ~[post-mortem]~ [after-party]
+#### Pt3. ~~[post-mortem]~~ [after-party]
 
-Right after the interview, check any new information you just learned. And Write feedback. 
+Right after the interview, check any new information you just learned. And with a fresh memory and notes write feedback.
 
-Consider also curiosity and 
+**Curiosity is quite important**. If you don't stop after answering "How?" _(to do it_), but also seek "Why?" _(it was made this way)_, You gain more insights.
+And since most of the knowledge is gained outside university, It's important to learn during a job. 
 
 Some people do a job, without even understanding how and why it works, but do it fast.
 You can find people who would spend twice as time looking for a root cause. 
+

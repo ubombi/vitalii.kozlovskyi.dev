@@ -1,3 +1,8 @@
+---
+title: "GPG Hardware Key and Git Signing"
+date: 2021-11-21T23:08:59+01:00
+---
+
 ### Setup
 - 2 YubiKey Hardware Keys [K1, K2]
 - Root offline key for CA. Encrypted, backuped and saved in a safe places.
@@ -53,3 +58,4 @@ Looks signed, but wait. Why it used the wrong key?
 ```
 gpg:                using EDDSA key S1
 ```
+

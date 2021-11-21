@@ -1,0 +1,38 @@
+baseURL: https://vitalii.kozlovskyi.dev/
+languageCode: en-us
+title: Personal buzzwords repository
+description: "Thoughts, notes... "
+theme: "PaperMod"
+enableRobotsTXT: true
+publishDir: "docs"
+
+
+params:
+  env: "production"
+  defaultTheme: "dark"
+  disableThemeToggle: true
+  keywords:
+  - Blog
+  - Linux
+  - Go
+  - Python
+  - Programming
+  - Tech
+  cover:
+    linkFullImages: true
+  # home-info mode
+  homeInfoParams:
+    Title: "Greetings,"
+    Content: "You probably reached end of the internet."
+  socialIcons:
+    - name: stackoverflow
+      url: "https://stackoverflow.com/users/3861851/ubombi"
+    - name: github
+      url: "https://github.com/ubombi"
+  editPost:
+    URL: "https://github.com/vitalii.kozlovskyi.dev/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  hideSummary: false
