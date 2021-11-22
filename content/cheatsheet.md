@@ -25,6 +25,22 @@ loglevel=${1:-info} # ${name:-value}
 ```bash
 # Always use ssh keys instead of asking for a password.
 git config --global url.ssh://git@github.com/.insteadOf https://github.com/
+
+# Commit signing
+git config --global user.signingkey SOMEKEYID! # Choose Key; note ending `!`
+git config --global commit.gpgsign true # Auto sign without `-S`
+# note: You can set up different keys per each repo.
+
+# Of course profile
+git config --global user.email "your@email.com"
+git config --global user.Name "Name Surname"
+
+git config --global pull.rebase true # Rebase own changes on never commit from upstream
+# git config --global fetch.prune true # In case you need it
+
+# Other
+git rebase -i HEAD~9 # Squash / Edit lasn N=9 commits
+git add -p # last check before commit.
 ```
 
 ### Yubikey (hardware keys in general)

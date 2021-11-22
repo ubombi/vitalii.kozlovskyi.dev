@@ -22,7 +22,7 @@
       <pubDate>Mon, 22 Nov 2021 01:18:48 +0100</pubDate>
       
       <guid>https://vitalii.kozlovskyi.dev/cheatsheet/</guid>
-      <description>Bash # Run command if binaty exists without additional output command -v echo &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; echo &amp;#34;works&amp;#34; command -v thefuck &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; eval $(thefuck --alias) # default value for variable/argument loglevel=${1:-info} # ${name:-value} Git # Always use ssh keys instead of asking for a password. git config --global url.ssh://git@github.com/.insteadOf https://github.com/ Yubikey (hardware keys in general) # OTP, OATH does not work unless pcscd is running sudo systemctl enable --now pcscd.</description>
+      <description>Bash # Run command if binaty exists without additional output command -v echo &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; echo &amp;#34;works&amp;#34; command -v thefuck &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; eval $(thefuck --alias) # default value for variable/argument loglevel=${1:-info} # ${name:-value} Git # Always use ssh keys instead of asking for a password. git config --global url.ssh://git@github.com/.insteadOf https://github.com/ # Commit signing git config --global user.signingkey SOMEKEYID! # Choose Key; note ending `!` git config --global commit.gpgsign true # Auto sign without `-S` # note: You can set up different keys per each repo.</description>
     </item>
     
     <item>
