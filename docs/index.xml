@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Nov 2021 23:09:49 +0100</lastBuildDate><atom:link href="https://vitalii.kozlovskyi.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CV</title>
+      <link>https://vitalii.kozlovskyi.dev/cv/</link>
+      <pubDate>Mon, 22 Nov 2021 01:43:45 +0100</pubDate>
+      
+      <guid>https://vitalii.kozlovskyi.dev/cv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CheatSheet</title>
+      <link>https://vitalii.kozlovskyi.dev/cheatsheet/</link>
+      <pubDate>Mon, 22 Nov 2021 01:18:48 +0100</pubDate>
+      
+      <guid>https://vitalii.kozlovskyi.dev/cheatsheet/</guid>
+      <description>Bash # Run command if binaty exists without additional output command -v echo &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; echo &amp;#34;works&amp;#34; command -v thefuck &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; eval $(thefuck --alias) Git # Always use ssh keys instead of asking for a password. git config --global url.ssh://git@github.com/.insteadOf https://github.com/ Yubikey (hardware keys in general) # OTP, OATH does not work unless pcscd is running sudo systemctl enable --now pcscd.service # Get oath OTP by name (substring match) into clipboard ykman oath accounts code -s OpenVPN | xclip -selection clipboard Infra K8S Don&amp;rsquo;t forget about official kubectl CheatSheet.</description>
+    </item>
+    
+    <item>
       <title>How to make tech interviews comfortable for Candidate and efficient for you</title>
       <link>https://vitalii.kozlovskyi.dev/posts/tech-interview/</link>
       <pubDate>Sun, 21 Nov 2021 23:09:49 +0100</pubDate>
