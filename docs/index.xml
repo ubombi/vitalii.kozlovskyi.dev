@@ -22,7 +22,7 @@
       <pubDate>Mon, 22 Nov 2021 01:18:48 +0100</pubDate>
       
       <guid>https://vitalii.kozlovskyi.dev/cheatsheet/</guid>
-      <description>Bash # Run command if binaty exists without additional output command -v echo &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; echo &amp;#34;works&amp;#34; command -v thefuck &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; eval $(thefuck --alias) Git # Always use ssh keys instead of asking for a password. git config --global url.ssh://git@github.com/.insteadOf https://github.com/ Yubikey (hardware keys in general) # OTP, OATH does not work unless pcscd is running sudo systemctl enable --now pcscd.service # Get oath OTP by name (substring match) into clipboard ykman oath accounts code -s OpenVPN | xclip -selection clipboard Infra K8S Don&amp;rsquo;t forget about official kubectl CheatSheet.</description>
+      <description>Bash # Run command if binaty exists without additional output command -v echo &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; echo &amp;#34;works&amp;#34; command -v thefuck &amp;amp;&amp;gt; /dev/null &amp;amp;&amp;amp; eval $(thefuck --alias) # default value for variable/argument loglevel=${1:-info} # ${name:-value} Git # Always use ssh keys instead of asking for a password. git config --global url.ssh://git@github.com/.insteadOf https://github.com/ Yubikey (hardware keys in general) # OTP, OATH does not work unless pcscd is running sudo systemctl enable --now pcscd.</description>
     </item>
     
     <item>

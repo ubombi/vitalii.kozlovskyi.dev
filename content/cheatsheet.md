@@ -15,6 +15,10 @@ TocOpen: true
 command -v echo &> /dev/null && echo "works"
 command -v thefuck &> /dev/null && eval $(thefuck --alias)
 
+# default value for variable/argument
+loglevel=${1:-info} # ${name:-value}
+
+
 ```
 
 ### Git
@@ -72,9 +76,50 @@ terraform state mv [options] SOURCE DESTINATION
 
 ##### Move state between different state files
 Hovever, in case if we fu\*ked up and need to move state, things get a bit more complicated
+
+Save states locally, into separate files
+```bash
+# cd source_dir
+terraform state pull > ~/source.tfstate
+# cd destination_dir
+terraform state pull > ~/destination.tfstate
 ```
-# TBD;
+
+Double check exported state files
+```bash
+terraform state list -state=~/source.tfstate # | grep 'mysupermodule'
+terraform state list -state=~/destination.tfstate
 ```
+
+move state between files (no errors expected)
+```bash
+# terraform state mv [options] SOURCE DESTINATION
+# where options are `-state` and `-state-out`; Also `-lock=false` may be required 
+terraform state mv -state=~/source.tfstate -state-out=~/destination.tfstate module.api.module.mysupermodule module.mysupermodule
+
+# This does not change actual infrastructure. We are somewhat editing json files.
+```
+
+since we are doing some dangerous stuff, double check states again.
+```bash
+terraform state list -state=~/source.tfstate # | grep 'mysupermodule'
+terraform state list -state=~/destination.tfstate
+```
+
+**DANGEROUS PART**: Pushing edited state. _(always do backups)_
+```bash
+# cd source_dir
+terraform state push ~/source.tfstate
+# cd destination_dir
+terraform state push ~/destination.tfstate
+```
+
+Check results
+```bash
+terraform plan # in source_dir & destination_dir
+```
+
+Dont forget to commit and push the code.
 
 
 
