@@ -35,7 +35,7 @@ params:
     - name: github
       url: "https://github.com/ubombi"
   editPost:
-    URL: "https://github.com/ubombi/vitalii.kozlovskyi.dev/blob/master/content"
+    URL: "https://github.com/ubombi/vitalii.kozlovskyi.dev/edit/master/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
   ShowShareButtons: true
