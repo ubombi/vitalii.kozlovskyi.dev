@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://vitalii.kozlovskyi.dev/posts/move-tf-resources-between-different-states/</loc>
+    <lastmod>2021-12-06T18:01:34+01:00</lastmod>
+  </url><url>
+    <loc>https://vitalii.kozlovskyi.dev/</loc>
+    <lastmod>2021-12-06T18:01:34+01:00</lastmod>
+  </url><url>
+    <loc>https://vitalii.kozlovskyi.dev/posts/</loc>
+    <lastmod>2021-12-06T18:01:34+01:00</lastmod>
+  </url><url>
+    <loc>https://vitalii.kozlovskyi.dev/posts/realtime-postgres-and-elastic/</loc>
+    <lastmod>2021-11-22T14:11:47+01:00</lastmod>
+  </url><url>
     <loc>https://vitalii.kozlovskyi.dev/cv/</loc>
     <lastmod>2021-11-22T01:43:45+01:00</lastmod>
   </url><url>
@@ -9,12 +21,6 @@
     <lastmod>2021-11-22T01:18:48+01:00</lastmod>
   </url><url>
     <loc>https://vitalii.kozlovskyi.dev/posts/tech-interview/</loc>
-    <lastmod>2021-11-21T23:09:49+01:00</lastmod>
-  </url><url>
-    <loc>https://vitalii.kozlovskyi.dev/</loc>
-    <lastmod>2021-11-21T23:09:49+01:00</lastmod>
-  </url><url>
-    <loc>https://vitalii.kozlovskyi.dev/posts/</loc>
     <lastmod>2021-11-21T23:09:49+01:00</lastmod>
   </url><url>
     <loc>https://vitalii.kozlovskyi.dev/posts/gpg-hardware-key-and-git-signing/</loc>

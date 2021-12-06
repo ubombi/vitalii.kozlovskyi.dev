@@ -6,7 +6,25 @@
     <description>Recent content on Personal buzzwords repository</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Nov 2021 23:09:49 +0100</lastBuildDate><atom:link href="https://vitalii.kozlovskyi.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Dec 2021 18:01:34 +0100</lastBuildDate><atom:link href="https://vitalii.kozlovskyi.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Move Resources Between Different TF States</title>
+      <link>https://vitalii.kozlovskyi.dev/posts/move-tf-resources-between-different-states/</link>
+      <pubDate>Mon, 06 Dec 2021 18:01:34 +0100</pubDate>
+      
+      <guid>https://vitalii.kozlovskyi.dev/posts/move-tf-resources-between-different-states/</guid>
+      <description>Copy-paste example of terraform states manipulation.</description>
+    </item>
+    
+    <item>
+      <title>Postgres and Elasticsearch Realtime Sync</title>
+      <link>https://vitalii.kozlovskyi.dev/posts/realtime-postgres-and-elastic/</link>
+      <pubDate>Mon, 22 Nov 2021 14:11:47 +0100</pubDate>
+      
+      <guid>https://vitalii.kozlovskyi.dev/posts/realtime-postgres-and-elastic/</guid>
+      <description>The power of sequential WAL decoding.</description>
+    </item>
+    
     <item>
       <title>CV</title>
       <link>https://vitalii.kozlovskyi.dev/cv/</link>
@@ -26,14 +44,12 @@
     </item>
     
     <item>
-      <title>How to make tech interviews comfortable for Candidate and efficient for you</title>
+      <title>Cozy And Efficient Tech Interview</title>
       <link>https://vitalii.kozlovskyi.dev/posts/tech-interview/</link>
       <pubDate>Sun, 21 Nov 2021 23:09:49 +0100</pubDate>
       
       <guid>https://vitalii.kozlovskyi.dev/posts/tech-interview/</guid>
-      <description>I&amp;rsquo;m not talking about FAANG-like whole day endurance test but time-limited (1-2h) talk. Disclaimer: This is an exclusively personal opinion.
-It starts from (surprise) preparation. Check his CV, public git, StackOverflow, blog, and note some key points of interest to start a discussion. Any specific technology, business domain, or scientific field. E:G:
- Deep knowledge of Postgres. How and why? Questions on HomeAssistant repo. IoT/embedded? Commits to serverless.  Candidate is not an enemy, but the decision is NO by default!</description>
+      <description>What if candidate is smarter than you?.. How to check knowledge and experience within few hours?..</description>
     </item>
     
     <item>
@@ -42,8 +58,7 @@ It starts from (surprise) preparation. Check his CV, public git, StackOverflow, 
       <pubDate>Sun, 21 Nov 2021 23:08:59 +0100</pubDate>
       
       <guid>https://vitalii.kozlovskyi.dev/posts/gpg-hardware-key-and-git-signing/</guid>
-      <description>Setup  2 YubiKey Hardware Keys [K1, K2] Root offline key for CA. Encrypted, backuped and saved in a safe places.  subkey S1 for signing + auth -&amp;gt; K1 subkey E1 for encryption _-&amp;gt; K1 subkey S2 for signing + auth _-&amp;gt; K2 subkey E2 for encryption -&amp;gt; K2    Root key is not stored on any of hardware keys. Only subkeys.
-K2 is used as backup for 2FA, and additional set of keys is kinda bonus feature.</description>
+      <description>Weird behavior when usign subkeys. The mistery of exclamation mark.</description>
     </item>
     
   </channel>

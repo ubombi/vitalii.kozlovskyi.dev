@@ -1,6 +1,7 @@
 ---
-title: "GPG Hardware Key and Git Signing"
 date: 2021-11-21T23:08:59+01:00
+title: "GPG Hardware Key and Git Signing"
+summary: "Weird behavior when usign subkeys. The mistery of exclamation mark."
 ---
 
 ### Setup

@@ -6,6 +6,11 @@ theme: "PaperMod"
 enableRobotsTXT: true
 publishDir: "docs"
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 
 params:
   env: "production"

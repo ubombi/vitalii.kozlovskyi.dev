@@ -1,8 +1,9 @@
 ---
-title: "How to make tech interviews comfortable for Candidate and efficient for you"
 date: 2021-11-21T23:09:49+01:00
 ShowToc: true
 TocOpen: true
+title: "Cozy And Efficient Tech Interview"
+summary: "What if candidate is smarter than you?.. How to check knowledge and experience within few hours?.."
 ---
 
 I'm not talking about FAANG-like whole day endurance test but time-limited (1-2h) talk.
