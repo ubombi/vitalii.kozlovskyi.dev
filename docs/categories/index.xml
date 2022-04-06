@@ -5,6 +5,16 @@
     <link>https://vitalii.kozlovskyi.dev/categories/</link>
     <description>Recent content in Categories on Personal buzzwords repository</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://vitalii.kozlovskyi.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Apr 2022 21:13:18 +0200</lastBuildDate><atom:link href="https://vitalii.kozlovskyi.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logical Decoding</title>
+      <link>https://vitalii.kozlovskyi.dev/categories/logical-decoding/</link>
+      <pubDate>Wed, 06 Apr 2022 21:13:18 +0200</pubDate>
+      
+      <guid>https://vitalii.kozlovskyi.dev/categories/logical-decoding/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

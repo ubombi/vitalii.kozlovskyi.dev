@@ -3,6 +3,10 @@ title: "Building multiarch docker images for Go"
 date: 2022-04-05T08:03:26+02:00
 draft: false 
 summary: "How to build small multiarch image using Github Workflow"
+tags:
+- Docker
+- CI
+- Github
 ---
 
 ### 1. Order matters

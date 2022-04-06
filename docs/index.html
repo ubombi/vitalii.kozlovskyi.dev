@@ -107,6 +107,35 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Replication Flow
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>TBD: diagram
+1. Create replication slot This way, you preserve WAL (new changes) from being deleted. This would also create a snapshot of a current state. Snapshot can be exported, or reused in current transaction.
+2. Import existing data. In replication only changes are streamed. Current state needs to be backuped manually.
+Physical replication: There is a mechanism to make a backup of a running server, called “base backup”. You need to specify snapshot name, to avoid data races....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-04-06 21:13:18 +0200 CEST'>April 6, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to Replication Flow" href="https://vitalii.kozlovskyi.dev/posts/replication-flow/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>What is Postgres Write-Ahead Log
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>Write-Ahead Log docs As it states in name, it’s log that’s written BEFORE any actual changes are made.
+The most important thing, WAL can be replayed and will always give same result. Being compact binary representation of operations and minimal data used in them, gives us few functions:
+ Ability to restore after crash Replicate data by transfering log segments and replaying them in replica nodes. Replacing multiple random writes with single sequential write....</p>
+  </section>
+  <footer class="entry-footer"><span title='2022-04-06 20:29:11 +0200 CEST'>April 6, 2022</span></footer>
+  <a class="entry-link" aria-label="post link to What is Postgres Write-Ahead Log" href="https://vitalii.kozlovskyi.dev/posts/wtf-is-wal/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Building multiarch docker images for Go
     </h2>
   </header>
@@ -131,14 +160,14 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Postgres and Elasticsearch Realtime Sync<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    <h2>Postgres and Elasticsearch Realtime Sync
     </h2>
   </header>
   <section class="entry-content">
     <p>The power of sequential WAL decoding.</p>
   </section>
   <footer class="entry-footer"><span title='2021-11-22 14:11:47 +0100 CET'>November 22, 2021</span></footer>
-  <a class="entry-link" aria-label="post link to Postgres and Elasticsearch Realtime Sync" href="https://vitalii.kozlovskyi.dev/posts/realtime-postgres-and-elastic/"></a>
+  <a class="entry-link" aria-label="post link to Postgres and Elasticsearch Realtime Sync" href="https://vitalii.kozlovskyi.dev/posts/intro-into-logical-decoding/"></a>
 </article>
 
 <article class="post-entry"> 
