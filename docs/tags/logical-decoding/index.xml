@@ -1,43 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Logical Decoding on Personal buzzwords repository</title>
-    <link>https://vitalii.kozlovskyi.dev/tags/logical-decoding/</link>
-    <description>Recent content in Logical Decoding on Personal buzzwords repository</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 06 Apr 2022 21:13:18 +0200</lastBuildDate><atom:link href="https://vitalii.kozlovskyi.dev/tags/logical-decoding/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Replication Flow</title>
-      <link>https://vitalii.kozlovskyi.dev/posts/replication-flow/</link>
-      <pubDate>Wed, 06 Apr 2022 21:13:18 +0200</pubDate>
-      
-      <guid>https://vitalii.kozlovskyi.dev/posts/replication-flow/</guid>
-      <description>TBD: diagram
-1. Create replication slot This way, you preserve WAL (new changes) from being deleted. This would also create a snapshot of a current state. Snapshot can be exported, or reused in current transaction.
-2. Import existing data. In replication only changes are streamed. Current state needs to be backuped manually.
-Physical replication: There is a mechanism to make a backup of a running server, called &amp;ldquo;base backup&amp;rdquo;. You need to specify snapshot name, to avoid data races.</description>
-    </item>
-    
-    <item>
-      <title>What is Postgres Write-Ahead Log</title>
-      <link>https://vitalii.kozlovskyi.dev/posts/wtf-is-wal/</link>
-      <pubDate>Wed, 06 Apr 2022 20:29:11 +0200</pubDate>
-      
-      <guid>https://vitalii.kozlovskyi.dev/posts/wtf-is-wal/</guid>
-      <description>Write-Ahead Log docs As it states in name, it&amp;rsquo;s log that&amp;rsquo;s written BEFORE any actual changes are made.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Logical Decoding on Personal buzzwords repository</title><link>https://vitalii.kozlovskyi.dev/tags/logical-decoding/</link><description>Recent content in Logical Decoding on Personal buzzwords repository</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 06 Apr 2022 21:13:18 +0200</lastBuildDate><atom:link href="https://vitalii.kozlovskyi.dev/tags/logical-decoding/index.xml" rel="self" type="application/rss+xml"/><item><title>Replication Flow</title><link>https://vitalii.kozlovskyi.dev/posts/replication-flow/</link><pubDate>Wed, 06 Apr 2022 21:13:18 +0200</pubDate><guid>https://vitalii.kozlovskyi.dev/posts/replication-flow/</guid><description>TBD: diagram
+1. Create replication slot This way, you preserve WAL (new changes) from being deleted. This would also create a snapshot of a current state. Snapshot can be exported, or reused in current transaction. 2. Import existing data. In replication only changes are streamed. Current state needs to be backuped manually. Physical replication: There is a mechanism to make a backup of a running server, called &amp;ldquo;base backup&amp;rdquo;.</description></item><item><title>What is Postgres Write-Ahead Log</title><link>https://vitalii.kozlovskyi.dev/posts/wtf-is-wal/</link><pubDate>Wed, 06 Apr 2022 20:29:11 +0200</pubDate><guid>https://vitalii.kozlovskyi.dev/posts/wtf-is-wal/</guid><description>Write-Ahead Log docs As it states in name, it&amp;rsquo;s log that&amp;rsquo;s written BEFORE any actual changes are made.
 The most important thing, WAL can be replayed and will always give same result. Being compact binary representation of operations and minimal data used in them, gives us few functions:
- Ability to restore after crash Replicate data by transfering log segments and replaying them in replica nodes. Replacing multiple random writes with single sequential write.</description>
-    </item>
-    
-    <item>
-      <title>Postgres and Elasticsearch Realtime Sync</title>
-      <link>https://vitalii.kozlovskyi.dev/posts/intro-into-logical-decoding/</link>
-      <pubDate>Mon, 22 Nov 2021 14:11:47 +0100</pubDate>
-      
-      <guid>https://vitalii.kozlovskyi.dev/posts/intro-into-logical-decoding/</guid>
-      <description>The power of sequential WAL decoding.</description>
-    </item>
-    
-  </channel>
-</rss>
+Ability to restore after crash Replicate data by transfering log segments and replaying them in replica nodes. Replacing multiple random writes with single sequential write.</description></item><item><title>Postgres and Elasticsearch Realtime Sync</title><link>https://vitalii.kozlovskyi.dev/posts/intro-into-logical-decoding/</link><pubDate>Mon, 22 Nov 2021 14:11:47 +0100</pubDate><guid>https://vitalii.kozlovskyi.dev/posts/intro-into-logical-decoding/</guid><description>The power of sequential WAL decoding.</description></item></channel></rss>

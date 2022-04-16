@@ -5,6 +5,7 @@ description: "Thoughts, notes... "
 theme: "PaperMod"
 enableRobotsTXT: true
 publishDir: "docs"
+staticDir: "static"
 
 markup:
   goldmark:
@@ -14,7 +15,7 @@ markup:
 
 params:
   env: "production"
-  defaultTheme: "dark"
+  defaultTheme: "light"
   disableThemeToggle: true
   keywords:
   - Blog
@@ -23,6 +24,7 @@ params:
   - Python
   - Programming
   - Tech
+  - CI
   cover:
     linkFullImages: true
   # home-info mode

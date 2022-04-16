@@ -14,10 +14,20 @@ TBD: diagram
 
 ### 1. Create replication slot
 This way, you preserve WAL (new changes) from being deleted. This would also create a snapshot of a current state. Snapshot can be exported, or reused in current transaction.
+{{< figure
+	src="/media/postgres/sync_1_create_slot.png"
+	alt="Create new replication slot to preserve future changes"
+	height="100px"
+>}}
 
 
 ### 2. Import existing data.
 In replication only changes are streamed. Current state needs to be backuped manually.
+{{< figure
+	src="/media/postgres/sync_2_fetch_existing_data.png"
+	alt="Copy existing data; AKA backup"
+	height="100px"
+>}}
 
 #### Physical replication:
 There is a mechanism to make a backup of a running server, called "base backup". You need to specify snapshot name, to avoid data races.
@@ -32,6 +42,11 @@ So we fetch all the data in old fashioned way, using `COPY foo TO` or `SELECT FR
 
 ### 3. Subscribe and Stream changes. [Protocol](https://www.postgresql.org/docs/current/protocol-replication.html)
 After `START_REPLICATION SLOT ` command server sends all updates. Format depends of slot. Physical is raw WAL, while Logical depends of decoding plugin, specified it this command 
+{{< figure
+	src="/media/postgres/sync_3_stream_and_apply_changes.png"
+	alt="Receive and apply changes from WAL stream"
+	height="100px"
+>}}
 
 pgoutput for example, uses same encoding as regular query results. Since 14.0 binary encoded rows are also awailable.
 

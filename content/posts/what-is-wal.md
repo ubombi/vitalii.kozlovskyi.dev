@@ -22,6 +22,11 @@ Being compact binary representation of operations and minimal data used in them,
 
 It can however use all of your disk space, quite fast. Serialized transactions use way more disk space then result of execution. So log files, which were applied and fsync-ed to disk, are beeing garbage collected asap.
 
+{{< figure
+	src="/media/postgres/wal_scheme.png" title="Postgres WAL scheme"
+	title="Generic overview"
+>}}
+
 Quite a lot of benefits for such a simple concept. But it doesn't end here.
 
 ### Streaming (bonus)
@@ -32,6 +37,11 @@ How to make sure logs are not deleted before replication is successful?
 
 ### Replicaiton Slots
 Oversimplified: Slot is a position at which specific replica is replaying WAL is atm, which also keeps Primary WAL from beeing deleted. [attributes](https://www.postgresql.org/docs/current/view-pg-replication-slots.html) [Doc](https://www.postgresql.org/docs/current/warm-standby.html#STREAMING-REPLICATION-SLOTS)
+
+{{< figure
+	src="/media/postgres/reserved_wal.png"
+	alt="WAL segments are reserved by Replicaiton slot"
+>}}
 
 Consists of written, flushed and applied positions.
 
