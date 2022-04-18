@@ -1,7 +1,7 @@
 baseURL: https://vitalii.kozlovskyi.dev/
 languageCode: en-us
 title: Personal buzzwords repository
-description: "Thoughts, notes... "
+description: "Technical thoughts, notes... "
 theme: "PaperMod"
 enableRobotsTXT: true
 publishDir: "docs"
