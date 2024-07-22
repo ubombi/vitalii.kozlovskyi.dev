@@ -43,6 +43,3 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   hideSummary: false
-
-menu:
-  - main
