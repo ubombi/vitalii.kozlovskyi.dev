@@ -151,7 +151,7 @@ with a dataset that can't fit in a single server, in a cost efficient manner.
 - List **client** devices
 - Manage **company** employees
 - List **employee** companies
-- Find layers in **city**
+- Find lawyers in **city**
 - Show bandwidth by **device group** and **hour**
 
 Appropriate sharding key, depends on both the data and access pattern.
