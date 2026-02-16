@@ -1,0 +1,18 @@
+summary {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: background-color 0.2s;
+}
+
+summary:hover {
+  background-color: var(--border);
+}
+
+details[open] summary:hover {
+  background-color: transparent;
+}
+
+details[open] > :not(summary) {
+  padding-left: 1em;
+}
